@@ -85,23 +85,6 @@ if points:
         for i, (x, y) in enumerate(hull):
             st.markdown(f"{i+1}. ({x:.2f}, {y:.2f})")
 
-    # with col2:
-    #     fig, ax = plt.subplots(figsize=(6, 6))
-    #     x_all, y_all = zip(*points)
-    #     ax.scatter(x_all, y_all, label="Punkty", c='blue')
-
-    #     if len(hull) >= 2:
-    #         hull_points = np.array(hull + [hull[0]])
-    #         ax.plot(hull_points[:, 0], hull_points[:, 1], c='red', linewidth=2, label="Otoczka")
-
-    #     ax.axhline(0, color='gray', linewidth=0.5)
-    #     ax.axvline(0, color='gray', linewidth=0.5)
-    #     ax.set_xlabel("X")
-    #     ax.set_ylabel("Y")
-    #     ax.set_title("Wizualizacja otoczki wypukłej")
-    #     ax.grid(True, linestyle='--', alpha=0.5)
-    #     ax.legend()
-    #     st.pyplot(fig)
 with col2:
     # Dane punktów
     x_all, y_all = zip(*points)
